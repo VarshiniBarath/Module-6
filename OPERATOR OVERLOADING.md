@@ -29,14 +29,35 @@ To write a Python program to perform division of two complex numbers using the b
 
 ---
 
-### PROGRAM
+# PROGRAM
+```
+Reg.No: 212222090028
+Name: Varshini R
 
+class complex:
+    def __init__(self, a, b):
+        self.a = a
+        self.b = b
+
+    def __truediv__(self, other):
+        real=self.a/other.a
+        imag=self.b/other.b
+        return complex(real, imag)
+    def __str__(self):
+        return f"({self.a}, {self.b})"
+Ob1 = complex(10, 21)
+Ob2 = complex(2, 3)
+Ob3 = Ob1 / Ob2
+print(Ob3)
 ```
 
-```
+# OUTPUT
+<img width="487" height="155" alt="image" src="https://github.com/user-attachments/assets/3245a6e6-241f-42a7-91e9-f0b75b0cf412" />
 
-### OUTPUT
+
+# RESULT
+Thus, the program to overload the division operator for complex numbers was executed successfully and the output was verified.
 
 
-### RESULT
+
 
