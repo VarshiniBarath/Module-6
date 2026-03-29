@@ -23,17 +23,34 @@ To write a Python program to create a class `Student` with the private members `
 
 ---
 
-### PROGRAM
+# PROGRAM
+```
+Reg.No: 212222090028
+Name:Varshini R
 
+class Student:
+    def __init__(self, name, age):
+        self.name = name
+        self.__age = age
+    def get_age(self):
+        return self.__age
+    def set_age(self, age):
+        self.__age=age
+    def get_name(self):
+        return self.__name
+
+
+stud = Student('Jessa', 14)
+
+print('Name:', stud.name, stud.get_age())
+stud.set_age(16)
+print('Name:', stud.name, stud.get_age())
 ```
 
+# OUTPUT
+<img width="487" height="179" alt="image" src="https://github.com/user-attachments/assets/d4cfe9c0-aa4e-4800-892f-f71f687ce879" />
 
 
-```
-
-### OUTPUT
-
-
-### RESULT
-
+# RESULT
+Thus the python program to create a class Student with the private members name and age, and add getter and setter methods has been executed.
 
